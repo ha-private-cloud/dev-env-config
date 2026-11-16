@@ -1,0 +1,26 @@
+applications:
+  auth-api:
+    repo: https://github.com/ha-private-cloud/auth-api.git
+    ref: development
+  storage-api:
+    repo: https://github.com/ha-private-cloud/storage-api.git
+    ref: development
+  clusterkeep-ui:
+    repo: https://github.com/ha-private-cloud/clusterkeep-ui.git
+    ref: development
+  storage-ui:
+    repo: https://github.com/ha-private-cloud/storage-ui.git
+    ref: development
+  admin-ui:
+    repo: https://github.com/ha-private-cloud/admin-ui.git
+    ref: development
+
+post-up-message: |
+  Start at http://localhost:9080/login and log in as admin / dev-password-please-change.
+  You'll be asked to choose a new password and then shown your storage recovery code.
+
+    clusterkeep-ui   http://localhost:9080
+    storage-ui       http://localhost:9081
+    admin-ui         http://localhost:9083
+    auth-api         http://localhost:9082/docs
+    storage-api      http://localhost:9084/docs
